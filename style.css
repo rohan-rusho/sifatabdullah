@@ -1400,6 +1400,15 @@ textarea:focus {
 }
 
 @media (max-width: 768px) {
+    .desktop-nav a:not(.nav-cta) {
+        display: none;
+    }
+
+    .main-header {
+        justify-content: flex-end;
+        padding: 0 20px;
+    }
+
     .section {
         padding: 60px 5%;
     }
