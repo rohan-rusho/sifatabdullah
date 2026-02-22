@@ -23,9 +23,22 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="assets/profile.jpg">
 </head>
 
 <body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-circle"></div>
+    </div>
+
+    <!-- Modern Background Decoration Blobs -->
+    <div class="bg-shape blob-1"></div>
+    <div class="bg-shape blob-2"></div>
+    <div class="bg-shape blob-3"></div>
+
     <div class="scroll-progress" id="scroll-progress"></div>
 
     <div class="layout">
@@ -139,6 +152,17 @@
         <!-- Main Content -->
         <main class="main-content">
 
+            <!-- Sticky Modern Navigation -->
+            <header class="main-header" id="main-header">
+                <nav class="desktop-nav">
+                    <a href="#hero">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#projects">Work</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#contact" class="nav-cta">Let's Talk</a>
+                </nav>
+            </header>
+
             <!-- Hero Section -->
             <section id="hero" class="hero-section reveal">
                 <div class="hero-container">
@@ -151,6 +175,9 @@
                         </div>
                     </div>
                     <div class="hero-text">
+                        <div class="status-badge">
+                            <span class="status-dot"></span> Available for work
+                        </div>
                         <div class="hero-greeting">HELLO, I AM</div>
                         <h1 class="hero-name">SIFAT ABDULLAH</h1>
                         <h2 class="hero-role">
@@ -221,6 +248,51 @@
                         <h3 class="edu-year">CRM & Lead Gen</h3>
                         <p class="edu-school">Architecting automated lead generation pipelines and managing CRM
                             ecosystems to nurture prospects and significantly boost conversion rates.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Campaigns Section -->
+            <section id="projects" class="section reveal">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Campaigns</h2>
+                    <div class="title-separator"></div>
+                    <p class="section-subtitle">A curated selection of my most impactful digital marketing projects.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card modern-card">
+                        <div class="project-image-placeholder">
+                            <i class="ri-megaphone-line"></i>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span>Paid Ads</span>
+                                <span>Lead Gen</span>
+                            </div>
+                            <h3 class="project-title">B2B Lead Generation Overhaul</h3>
+                            <p class="project-desc">Revamped the entire digital sales funnel for a real estate client,
+                                resulting in a 150% increase in qualified leads while reducing CPL by 40%.</p>
+                            <a href="#" class="project-link">View Case Study <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card modern-card">
+                        <div class="project-image-placeholder alt-bg">
+                            <i class="ri-bar-chart-box-line"></i>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span>Social Media</span>
+                                <span>Brand Awareness</span>
+                            </div>
+                            <h3 class="project-title">E-Commerce Brand Launch</h3>
+                            <p class="project-desc">Orchestrated a full-scale digital launch marketing strategy, driving
+                                10k+ organic followers and 500+ sales in the first 30 days.</p>
+                            <a href="#" class="project-link">View Case Study <i class="ri-arrow-right-line"></i></a>
+                        </div>
                     </div>
                 </div>
             </section>
