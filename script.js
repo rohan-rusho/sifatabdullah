@@ -42,6 +42,36 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
+    // Mobile Menu Toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const navMenu = document.getElementById('nav-menu');
+
+    if (menuBtn && navMenu) {
+        menuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            // Toggle icon
+            const icon = menuBtn.querySelector('i');
+            if (navMenu.classList.contains('active')) {
+                icon.classList.remove('ri-menu-3-line');
+                icon.classList.add('ri-close-line');
+            } else {
+                icon.classList.remove('ri-close-line');
+                icon.classList.add('ri-menu-3-line');
+            }
+        });
+
+        // Close menu when clicking a link
+        const navLinks = navMenu.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                const icon = menuBtn.querySelector('i');
+                icon.classList.remove('ri-close-line');
+                icon.classList.add('ri-menu-3-line');
+            });
+        });
+    }
+
     window.addEventListener('scroll', revealOnScroll);
     revealOnScroll(); // Trigger once on load
 
